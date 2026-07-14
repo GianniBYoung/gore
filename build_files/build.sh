@@ -10,6 +10,8 @@ dnf5 install -y  \
   p7zip p7zip-plugins \
   poppler-utils \
   ImageMagick \
+  podman-manpages \
+  man-db \
   wl-clipboard
 
 #### Example for enabling a System Unit File
