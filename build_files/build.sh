@@ -14,6 +14,8 @@ dnf5 install -y  \
   man-db \
   wl-clipboard
 
+dnf upgrade -y --enablerepo=updates-testing podman netavark crun && dnf clean all
+
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket nfs-server.service podman-auto-update.timer
