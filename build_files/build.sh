@@ -10,11 +10,11 @@ dnf5 install -y  \
   p7zip p7zip-plugins \
   poppler-utils \
   ImageMagick \
-  podman-manpages \
-  man-db \
   wl-clipboard
 
-dnf upgrade -y --enablerepo=updates-testing podman netavark crun && dnf clean all
+# podman 6 please
+dnf5 install -y fedora-repos-rawhide && dnf5 upgrade -y --enablerepo=rawhide podman netavark crun
+dnf5 clean all
 
 #### Example for enabling a System Unit File
 
