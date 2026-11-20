@@ -10,6 +10,7 @@ dnf5 install -y fish \
   p7zip p7zip-plugins \
   poppler-utils \
   ImageMagick \
+  just \
   wl-clipboard
 
 # podman 6 please
